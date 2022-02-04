@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.clearfix::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.relative{
+    position:relative;
+}
+
+body{
+    font-family:'Circular Std', sans-serif;
+    
+}
+
+section#col-right{
+    width:15vw;
+    height:92vh;
+    background-color: blue;
+    display:inline-block;
+    color:white;
+
+}
+
+section#main-area{
+    width:85vw;
+    height:92vh;
+    background-color:red;
+    float:right;
+    color:white;
+}
+
+footer{
+    width:100vw;
+    height:8vh;
+    background-color:black;
+    text-align:center;
+    color:white;
+    display:flex;
+    justify-content:space-between
+}
+
+.call-to-action{
+    background-color:black;
+    width:85vw;
+    height:8vh;
+    color:white;
+    text-align:right;
+}
+
+
