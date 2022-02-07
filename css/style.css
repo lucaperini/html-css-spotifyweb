@@ -329,8 +329,26 @@ section#main-area{
 .top-nav a:hover{
     border-bottom:2px solid lime;
     padding:3px 0;
+}
+
+.recently-played{
+    display:flex;
+    justify-content:flex-start;
+    margin-top:100px;
+    text-align:center;
+    width:100%;
+
     
 }
+
+.recently-played img{
+    width:85%;
+}
+
+.recently-cover{
+    width:20%;
+}
+
 
 
 
