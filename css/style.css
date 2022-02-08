@@ -37,11 +37,12 @@ h5{
     padding:2px 5px;
     font-size:11px;
     color:white;
+    vertical-align: middle;
 }
 
 h6{
     position:absolute;
-    font-size:.8rem;
+    font-size:.7rem;
     color:gray;
     width:80px;
     line-height: 2rem;
@@ -51,24 +52,24 @@ h6{
 footer{
     width:100vw;
     height:70px;
-    background-color:#333131;
+    background-color:rgb(40,40,40);
     color:white;
     display:flex;
     justify-content:space-between;
     position:fixed;
-    z-index:10;
+    z-index:12;
     bottom:0;
     line-height:10vh;
     padding:0 10px;
 }
 
 input{
-    width:20vw;
+    width:100px;
 }
 
 .call-to-action{
     background-color: rgb(9,11,18);
-    width:87vw;
+    width:calc(100% - 170px);
     height:70px;;
     text-align:right;
     line-height:9vh;
@@ -83,7 +84,6 @@ input{
     background-color: rgb(9,11,18);
     border: 1px solid white;
     padding:10px 30px;
-    margin-right:30px;
     text-decoration:none;
     color:white;
     font-size:0.7rem;
@@ -96,13 +96,15 @@ input{
     flex-direction:column;
     align-items:space-between;
     padding:1rem;
-    margin-top:60px;
+    margin-top:45px;
 }
 
 .nav-icon{
-    width:25px;
-    vertical-align: middle;
-    padding-bottom:6px;
+    width:20px;
+    vertical-align:middle;
+    padding-bottom:8px;
+    margin-top:8px;
+    
 }
 
 .nav-sidebar h4{
@@ -114,8 +116,9 @@ input{
 
 .nav-sidebar p{
     margin:3px 0;
-    font-size:0.7rem;
+    font-size:0.6rem;
     line-height:1.5rem;
+    
 }
 
 .square{
@@ -168,7 +171,7 @@ input{
 }
 
 .install{
-    margin-top:50px;
+    margin-top:43px;
 }
 
 .playlist{
@@ -180,10 +183,11 @@ input{
 }
 
 .album-small{
-    width: 12%;
-    margin-top:15px;
-    display:inline-block;
-    float:left;
+    width:30px;
+    vertical-align:middle;
+    /* margin-top:15px;
+    display:inline-block; */
+    /* float:left; */
 }
 
 .album {
@@ -196,16 +200,22 @@ input{
     
 }
 
-.album-icon{
-    position:absolute;
-    bottom:1%;
-    left:10%;
+.album-name{
+    font-size:.5rem;
     color:gray;
+    
+    
+}
+
+.album-icon{
+
+    
+    
+    
 }
 
 .album-icon i{
-    margin-right:8px;
-    font-size:12px;
+    font-size:11px;
 }
 
 .player-control .player>i{
@@ -232,11 +242,15 @@ input{
     padding-bottom:5px;    
 }
 
-.timing p{
+.timer {
     display: inline-block;
     font-size:0.6rem;
     line-height:0.6rem;
     margin:0 20px;
+}
+
+input#timer{
+    width:270px;
 }
 
 .timing{
@@ -246,25 +260,34 @@ input{
     margin-top:0px;
 }
 
-.right-control, .playing{
-    width:18%;
+.playing{
+    /* width:15%; */
+    display:flex;
+    justify-content:;
+    align-items:center;
+    
 }
+
+/* .right-control{
+   
+} */
 
 .right-control i{
-    margin-right:20px;
-    display:inline-block;
+    margin-right:10px;
     font-size:.7rem;
-}
+    
+}       
 
-.right-control input{
-    width:10vw !important;
-}
+/* .right-control input{
+    
+} */
 
 .control{
     display:flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:center;
-    margin-top:1.5rem;
+    
+    
 }
 
 .control i{
@@ -280,7 +303,7 @@ input{
 }
 
 section#col-left {
-    width:180px;
+    width:170px;
     background-color:black;
     display:flex;
     align-items:space-between;
@@ -288,15 +311,14 @@ section#col-left {
     color:white;
     float:left;
     position:fixed;
-    
+    min-width: 100px;
     
 }
 
 section#main-area{
-    width:calc(100% - 180px);
+    width:calc(100% - 170px);
     background-color:rgb(21,25,33);
     float:right;
-        
     color:white;
 }
 
@@ -306,7 +328,6 @@ section#main-area{
     justify-content:space-around;
     text-transform:uppercase;
     color:gray;
-    position:relative;
 }
 
 .top-nav ul{
@@ -344,27 +365,24 @@ section#main-area{
 .recently-played{
     display:flex;
     justify-content:flex-start;
-    margin:20px 20px;
+    margin:20px;
     text-align:center;
-    width:calc((100% - 200px) / 6);
-    gap:20px;
+    width:calc((100% - 170px) / 6);
+    gap:10px;
 }
 
 .recently-played img{
-    width: 140px;
+    width: 120px;
 }
 
 .recently-cover{
-    width:140px;
+    width:120px;
 }
 
 .tailored-cover{
-    width:140px;
+    width:120px;
 }
 
-.section-title{
-    display: block;
-}
 
 .tailored-cover-popular {
     width:140px;
@@ -386,7 +404,7 @@ section#main-area{
 .title{
     font-size:0.8rem;
     font-weight:bold;
-    padding-bottom:5px;
+    padding:10px 0 5px 0;
     vertical-align: middle;
 }
 
@@ -412,7 +430,7 @@ input[type="range"] {
     appearance: none;
     background: transparent;
     cursor: pointer;
-    width: 25rem;
+    /* width: 25rem; */
     }
 
     input[type="range"]:focus {
@@ -453,5 +471,22 @@ input[type="range"] {
     height: 1rem;
     width: 0rem;
 }
+
+/* Media Query */
+
+@media screen and (max-width:768px){
+        .recently-played{
+            display:flex;
+            flex-wrap: wrap;
+            width:95%;
+        }
+        .btn-upgrade {
+            
+        font-size:0.6rem;
+            
+        }
+
+        
+    }
 
 

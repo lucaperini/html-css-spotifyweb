@@ -16,13 +16,13 @@
             <div class="nav-sidebar">
                 <div class="side-nav">
                     <div>
-                    <a href="#"><img class="nav-icon" src="img/home.svg" alt=""><h5>Home</h5></a>
+                    <a href="#"><img class="nav-icon" src="img/home.svg" alt="home icon"><h5>Home</h5></a>
                     </div>
                     <div>
-                    <a href="#"><img class="nav-icon" src="img/search.svg" alt=""><h5>Cerca</h5></a>
+                    <a href="#"><img class="nav-icon" src="img/search.svg" alt="cerca..."><h5>Cerca</h5></a>
                     </div>
                     <div>
-                    <a href="#"><img class="nav-icon" src="img/libreria.svg" alt=""><h5>La tua libreria</h5></a>
+                    <a href="#"><img class="nav-icon" src="img/libreria.svg" alt="user library"><h5>La tua libreria</h5></a>
                     </div>
                 </div>
                 <div class="playlist">
@@ -159,10 +159,12 @@
     </main>
     <footer>
         <div class="playing">
-            <img class="album-small" src="img/sinister.jpeg" alt="sinister album">
+            <div>
+                <img class="album-small" src="img/sinister.jpeg" alt="sinister album">
+            </div>
             <div class="album">
                 <p>Sinister</p>
-                <p>Brano nome</p>
+                <p class="album-name">Brano Nome</p>
             </div>
             <div class="album-icon relative">
                 <i class="far fa-heart"></i>
@@ -178,10 +180,12 @@
                 <i class="fas fa-redo-alt"></i>
             </div>
             <div class="timing">
-                <p class="timer">0:25</p>
+                <div class="timer">0:25</div>
+                <div>
                     <input type="range" id="timer" name="play-time"
                     min="0" max="11">
-                <p class="timer">4:35</p>
+                </div> 
+                <div class="timer">4:35</div>
             </div>
         </div>
         <div class="right-control">
@@ -189,7 +193,9 @@
                 <i class="fas fa-list"></i>
                 <i class="fas fa-desktop"></i>
                 <i class="fas fa-volume-up"></i>
+            <div>
                 <input type="range">
+            </div>    
             </div>
             <div>
                 
