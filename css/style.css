@@ -185,9 +185,6 @@ input{
 .album-small{
     width:30px;
     vertical-align:middle;
-    /* margin-top:15px;
-    display:inline-block; */
-    /* float:left; */
 }
 
 .album {
@@ -203,13 +200,6 @@ input{
 .album-name{
     font-size:.5rem;
     color:gray;
-    
-    
-}
-
-.album-icon{
-
-    
     
     
 }
@@ -263,13 +253,13 @@ input#timer{
 .playing{
     /* width:15%; */
     display:flex;
-    justify-content:;
+    justify-content:space-between;
     align-items:center;
     
 }
 
 /* .right-control{
-   
+
 } */
 
 .right-control i{
@@ -385,7 +375,7 @@ section#main-area{
 
 
 .tailored-cover-popular {
-    width:140px;
+    width:120px;
     border-radius:50%;
     display:inline-block;
     vertical-align: middle;
@@ -474,19 +464,45 @@ input[type="range"] {
 
 /* Media Query */
 
+
 @media screen and (max-width:768px){
         .recently-played{
             display:flex;
             flex-wrap: wrap;
-            width:95%;
+            width:100%;
         }
         .btn-upgrade {
-            
-        font-size:0.6rem;
-            
+            font-size:0.6rem;
         }
 
         
     }
+
+@media screen and (max-width:576px){
+
+    section#col-left {
+        width:150px;
+    }
+
+    section#main-area{
+        width:calc(100% - 150px);
+    }
+
+    .call-to-action{
+        width:calc(100% - 150px);
+    }
+
+    .top-nav ul {
+        margin-right:10px;
+        text-align:center;
+    }
+
+    .top-nav a{
+        margin-right:25px;
+        line-height:40px;
+        
+    }
+}
+
 
 
