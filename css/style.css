@@ -177,6 +177,7 @@ input{
 
 .playlist{
     margin-bottom:150px;
+    overflow:auto;
 }
 
 .playlist p{
@@ -311,6 +312,7 @@ section#col-left {
     float:left;
     position:fixed;
     min-width: 40px;
+    overflow:auto;
     
 }
 
@@ -473,26 +475,46 @@ section#main-area{
 @media screen and (max-width:400px){
     
     section#main-area{
-        width:calc(100% - 40px);
+        width:calc(100% - 50px);
     }
 
     #main-logo{
+        background-image: url(../img/logo-small.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height:30px;
+        margin:10px 10px;
+    }
+    
+
+    section#col-left {
+        width:50px;
+        background-color:black;
+        display:flex;
+        align-items:space-between;
+        flex-direction:column;
+        color:white;
+        float:left;
+        position:fixed;
+        min-width: 40px;
+        overflow:auto;
+        height:100%
+    }
+    
+    .nav-sidebar h5, .playlist, .install p, 
+    .playlist, hr, .doe span {
         display:none;
     }
 
     .nav-sidebar{
-        display:none;
+        margin-top:30px;
     }
 
-    .playlist {
-        display:none;
-    }
-
-    .install-app{
-        display:none;
-    }
+    .install-app {
+    margin-top:360px; 
+}
     
     .call-to-action{
-        width:calc(100% - 40px);
+        width:calc(100% - 50px);
     }
 }
