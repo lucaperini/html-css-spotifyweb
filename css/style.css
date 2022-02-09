@@ -5,6 +5,7 @@
     padding:0;
 }
 
+/* Classi generiche */
 .clearfix::after{
     content:"";
     display:table;
@@ -15,9 +16,7 @@
     position:relative;
 }
 
-/* .overflow{
-    overflow:scroll;
-} */
+/* inizio custom style */
 
 body{
     font-family:'Circular Std', sans-serif;
@@ -60,7 +59,6 @@ footer{
     position:fixed;
     z-index:12;
     bottom:0;
-    line-height:10vh;
     padding:0 10px;
 }
 
@@ -147,6 +145,7 @@ input{
     font-size:1.8rem;
 }
 
+
 .install-app img{
     width:20px;
     height:20px;
@@ -172,7 +171,8 @@ input{
 }
 
 .install{
-    margin-top:43px;
+    margin-top:15px;
+    
 }
 
 .playlist{
@@ -233,11 +233,25 @@ input{
     padding-bottom:5px;    
 }
 
+.player-trackbar-center{
+    width:280px;
+    background-color:gray;
+    border-radius:5px;
+    height:5px;
+}
+
+.volume-trackbar{
+    width:140px;
+    background-color:gray;
+    border-radius:5px;
+    height:5px;
+}
+
 .timer {
     display: inline-block;
     font-size:0.6rem;
     line-height:0.6rem;
-    margin:0 20px;
+    margin:0 10px;
 }
 
 input#timer{
@@ -252,30 +266,22 @@ input#timer{
 }
 
 .playing{
-    /* width:15%; */
+    
     display:flex;
     justify-content:space-between;
     align-items:center;
     
 }
 
-/* .right-control{
-
-} */
-
-.right-control i{
-    margin-right:10px;
-    font-size:.7rem;
+.right-control {
+    display:flex;
+    
     
 }       
 
-/* .right-control input{
-    
-} */
-
 .control{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items:center;
     
     
@@ -283,6 +289,8 @@ input#timer{
 
 .control i{
     color:white;
+    margin-right:3px;
+    font-size:.7rem;
 }
 
 #main-logo{
@@ -302,7 +310,7 @@ section#col-left {
     color:white;
     float:left;
     position:fixed;
-    min-width: 100px;
+    min-width: 40px;
     
 }
 
@@ -373,7 +381,6 @@ section#main-area{
 }
 
 
-
 .cover-circle {
     width:120px;
     border-radius:50%;
@@ -382,14 +389,6 @@ section#main-area{
     margin-right:10px;
 }
 
-/* .popular-played{
-    display:flex;
-    justify-content:flex-start;
-    margin:30px 20px;
-    text-align:center;
-    width:87%;
-     */
-}
 
 .title{
     font-size:0.8rem;
@@ -411,84 +410,23 @@ section#main-area{
     }
 
 
-
-
-/************Trackbar************/
-
-input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    background: transparent;
-    cursor: pointer;
-    /* width: 25rem; */
-    }
-
-    input[type="range"]:focus {
-    outline: none;
-    }
-    
-    input[type="range"]::-webkit-slider-runnable-track{
-    background-color: #ace407;
-    border-radius: 0.5rem;
-    height: 0.5rem;
-}
-
-    input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none; 
-    appearance: none;
-    margin-top: -4px; 
-    background-color: #808080;
-    border-radius: 0.5rem;
-    height: 1rem;
-    }
-    
-    input[type="range"]:focus::-webkit-slider-thumb {
-    outline: 3px solid #808080;
-    outline-offset: 0.125rem;
-    }
-
-    input[type="range"]::-moz-range-track {
-    background-color:gray;
-    border-radius: 0.5rem;
-    height: 0.3rem;
-    cursor:pointer;
-    }
-
-    input[type="range"]::-moz-range-thumb {
-    background-color: #808080;
-    border: none; 
-    border-radius: 0.5rem;
-    height: 1rem;
-    width: 0rem;
-}
-
-/* Media Query */
+    /* Media Query */
 
 
 @media screen and (min-width:577px) and (max-width:768px){
-    
-    
-
     .recently-cover {
-        
         width: calc(calc(100% - 30px) / 4);
         }
-
-    
-
-        .btn-upgrade {
-            font-size:0.5rem;
+    .btn-upgrade {
+        font-size:0.6rem;
         }
-
-        
     } 
 
- @media screen and (max-width:576px){
+    @media screen and (max-width:576px){
 
     .recently-cover {
-        
         width: calc(calc(100% - 30px) / 2);
-        }
+    }
 
     section#col-left {
         width:150px;
@@ -512,11 +450,49 @@ input[type="range"] {
         line-height:40px;
         
     }
-} 
 
-@media screen and (max-width:400px){
+    .player-trackbar-center{
+        width:170px;
+        
+        
+    }
+    
+    .volume-trackbar{
+        width:50px;
+    }
 
+    .player-control .player>i{
+        margin-right:1.5rem;
+    }
+    
+    .player{
+        margin-left:20px;
+    }
 }
 
+@media screen and (max-width:400px){
+    
+    section#main-area{
+        width:calc(100% - 40px);
+    }
 
+    #main-logo{
+        display:none;
+    }
 
+    .nav-sidebar{
+        display:none;
+    }
+
+    .playlist {
+        display:none;
+    }
+
+    .install-app{
+        display:none;
+    }
+    
+    .call-to-action{
+        width:calc(100% - 40px);
+    }
+}
