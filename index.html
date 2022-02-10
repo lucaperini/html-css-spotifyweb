@@ -15,11 +15,11 @@
             <img id="main-logo" src="img/logo.svg" alt="spotify logo">
             <div class="nav-sidebar">
                 <div class="side-nav">
+                    
+                    <a href="#"><img class="nav-icon active" src="img/home.svg" alt="home icon"><h5 class="active-main">Home</h5></a>
+                    
                     <div>
-                    <a href="#"><img class="nav-icon" src="img/home.svg" alt="home icon"><h5>Home</h5></a>
-                    </div>
-                    <div>
-                    <a href="#"><img class="nav-icon" src="img/search.svg" alt="cerca..."><h5>Cerca</h5></a>
+                    <a href="#"><img class="nav-icon" src="img/search.svg" alt="search icon"><h5>Cerca</h5></a>
                     </div>
                     <div>
                     <a href="#"><img class="nav-icon" src="img/libreria.svg" alt="user library"><h5>La tua libreria</h5></a>
@@ -27,22 +27,25 @@
                     <div class="playlist">
                         <h4>Playlist</h4>
                         <div class="square relative">
-                            <span class="add">+</span>
-                            <h6>Crea Playlist</h6>
+                            <a href="#"><span class="add">+</span>
+                            <h6>Crea Playlist</h6></a>
                         </div>
-                        <p>Nome Playlist</p>
-                        <p>Nome Playlist</p>
-                        <p>Nome Playlist</p>
-                        <p>Nome Playlist</p>
-                        <p>Nome Playlist</p>
-                        <p>Nome Playlist</p>
+                        <div class="playlist-name">
+                            <ul>
+                                <a href="#"><li>Nome Playlist</li></a>
+                                <a href="#"><li>Nome Playlist</li></a>
+                                <a href="#"><li>Nome Playlist</li></a>
+                                <a href="#"><li>Nome Playlist</li></a>
+                                <a href="#"><li>Nome Playlist</li></a>
+                                <a href="#"><li>Nome Playlist</li></a>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="install-app">
+            <div class="install-app">
                     <div class="install">
-                        <i class="far fa-arrow-alt-circle-down install"></i>
-                    <p>Installa app</p>
+                        <a href="#"><i class="far fa-arrow-alt-circle-down install"></i>
+                    <p>Installa app</p></a>
                     </div>
                     <hr>
                     <div class="doe">
@@ -59,7 +62,7 @@
             <div class="main-content">
                 <nav class="top-nav">
                     <ul>
-                        <a href="#"><li>In evidenza</li></a>
+                        <a href="#" class="active"><li>In evidenza</li></a>
                         <a href="#"><li>Podcast</li></a>
                         <a href="#"><li>Classifiche</li></a>
                         <a href="#"><li>Generi e mood</li></a>
@@ -72,15 +75,25 @@
                     <h1 class="recently-title">Recently played</h1>
                 </div>
                 <div class="recently-played">
-                    <div class="recently-cover">
-                        <img src="img/metal_lifting.jpg" alt="">
+                    <div class="recently-cover relative">
                         <div class="description">
+                            <a href="#">
+                                <div class="opacity"></div>
+                            <img src="img/metal_lifting.jpg" alt="metal compilation">
+                            
+                            </a>
                             <p class="title">Heavy metal<p>
-                            <p class="subtitle">Subtitle</p>
+                                <p class="subtitle">Subtitle</p>
+                            
+                            
+                            <div class="play-video">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
+                        
                     </div>
                     <div class="recently-cover">
-                        <img src="img/stranger.jpeg" alt="">
+                        <img src="img/stranger.jpeg" alt="stranger things">
                         <div class="description">
                             <p class="title">Stranger Things, Vol.
                                 1 (a Netflix Original
@@ -96,14 +109,14 @@
                         </div>
                     </div>
                     <div class="recently-cover">
-                        <img src="img/split.jpeg" alt="">
+                        <img src="img/split.jpeg" alt="split">
                         <div class="description">
                             <p class="title">Split</p>
                             <p class="subtitle">Subtitle</p>
                         </div>
                     </div>
                     <div class="recently-cover">
-                        <img src="img/cure.jpeg" alt="">
+                        <img src="img/cure.jpeg" alt="cure">
                         <div class="description">
                             <p class="title">A cure for wellness<p>
                             <p class="subtitle">Subtitle</p>
@@ -133,8 +146,7 @@
                         <img src="img/mixdaily.jpeg" alt="daily playlist">
                         <div class="description">
                             <p class="title">Daily Mix 1<p>
-                            
-                        </div>
+                            </div>
                     </div>
                 </div>
                 <div>

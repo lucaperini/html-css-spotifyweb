@@ -23,10 +23,6 @@ body{
     
 }
 
-a:link{
-    color:white;
-}
-
 h1{
     margin-bottom:10px 5px;
     
@@ -36,9 +32,106 @@ h5{
     display:inline-block;
     padding:2px 5px;
     font-size:.8rem;
-    color:white;
+    color:gray;
     vertical-align: middle;
 }
+
+/* effetti :hover */
+
+h5:link{
+    color:gray;
+}
+
+h5:hover{
+    color:white;
+}
+
+h5.active-main{
+    color:white;
+}
+
+.nav-icon img:link{
+    color:gray;
+}
+
+h6:hover{
+    color:white; 
+}
+.square:hover{
+    background-color: white;
+}
+
+.square>h6:hover{
+    color:white;
+}
+
+.playlist-name ul a:hover{
+    color:white;
+}
+
+.install-app p:hover{
+    color:white;
+}
+
+.opacity{
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    
+}
+
+.play-video i{
+    position:absolute;
+    font-size:4rem;
+    color:white;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:50%;
+    height:50%;
+    
+}
+
+.call-to-action .btn-upgrade:hover{
+    font-size:.9rem;
+}
+
+.player-control .player>i:nth-of-type(3):hover{
+    font-size:1.6rem;
+    
+}
+
+.album-icon>i:nth-of-type(1):hover, 
+.album-icon>i:nth-of-type(2):hover{
+    color:white;
+}
+
+.album-name:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+.top-nav a:hover{
+    color:white;
+}
+
+.top-nav a:active{
+    border-bottom:2px solid lime;
+    padding:3px 0;
+    
+}
+
+.top-nav .active{
+    border-bottom:2px solid lime;
+    padding:3px 0;
+}
+
+/* fine effetti :hover */
+
 
 h6{
     position:absolute;
@@ -85,7 +178,7 @@ input{
     padding:10px 30px;
     text-decoration:none;
     color:white;
-    font-size:0.7rem;
+    font-size:0.8rem;
     font-weight:bold;
     text-transform:uppercase;
 }
@@ -103,12 +196,12 @@ input{
     vertical-align:middle;
     padding-bottom:8px;
     margin-top:8px;
-    
+    color:gray
 }
 
 .nav-sidebar h4{
     text-transform:uppercase;
-    font-size:0.7rem;
+    font-size:.8rem;
     margin:20px 0 10px 0;
 
 }
@@ -127,7 +220,7 @@ input{
     color:black;
     line-height: 3rem;
     margin-bottom:10px;
-}
+} 
 
 .square p{
     display:inline-block;
@@ -143,6 +236,7 @@ input{
     transform:translate(-50%,-50%);
     display:flex;
     font-size:1.8rem;
+    color:black;
 }
 
 .install-app{
@@ -160,7 +254,7 @@ input{
 }
 
 .install-app p, i{
-    font-size:0.7rem;
+    font-size:0.8rem;
     display:inline-block;
     margin-left:5px;
     padding:1px;
@@ -188,28 +282,24 @@ input{
 }
 
 .album {
-    font-size:0.6rem;
-    line-height:10px;
+    font-size:0.7rem;
+    line-height:1.rem;
     font-weight:bold;
     float:left;
     padding: 5px 10px;
-  
-    
 }
 
 .album-name{
-    font-size:.5rem;
+    font-size:.6rem;
     color:gray;
-    
-    
 }
 
 .album-icon i{
-    font-size:11px;
+    font-size:1rem;
 }
 
 .player-control .player>i{
-    margin-right:1.3rem;
+    margin-right:.5rem;
     font-size: 0.8rem;
     color:white;
 }
@@ -294,7 +384,7 @@ input#timer{
 
 #main-logo{
     padding:1rem;
-    width:130px;
+    width:150px;
     background-color:black;
 }
 
@@ -350,7 +440,7 @@ main {
     width:30px;
 }
 
-.top-nav a:hover{
+.top-nav a:active{
     border-bottom:2px solid lime;
     padding:3px 0;
 }
@@ -413,6 +503,26 @@ main {
     margin-left:10px;
     }
 
+.playlist{
+    max-height:200px;
+}
+
+.playlist-name{
+    overflow: scroll;
+    
+}
+
+.playlist-name li{
+    list-style-type: none;
+}
+
+.playlist-name a{
+    text-decoration:none;
+    color:gray;
+    font-size:0.8rem;
+    line-height:2rem;
+    
+}
 
     /* Media Query */
 
@@ -536,3 +646,4 @@ main {
         width:calc(100% - 50px);
     }
 }
+
