@@ -11,38 +11,50 @@
 </head>
 <body>
     <main class="relative clearfix">
+        <!-- sezione barra laterale sinistra -->
         <section id="col-left">
+            <!-- logo -->
             <img id="main-logo" src="img/logo.svg" alt="spotify logo">
+            <!-- navigazione principale-->
             <div class="nav-sidebar">
+                <!-- menu immagine e testo -->
                 <div class="side-nav">
-                    
-                    <a href="#"><img class="nav-icon active" src="img/home.svg" alt="home icon"><h5 class="active-main">Home</h5></a>
-                    
-                    <div>
-                    <a href="#"><img class="nav-icon" src="img/search.svg" alt="search icon"><h5>Cerca</h5></a>
-                    </div>
-                    <div>
-                    <a href="#"><img class="nav-icon" src="img/libreria.svg" alt="user library"><h5>La tua libreria</h5></a>
-                    </div>
+                    <ul>
+                        <li class="active">
+                            <a href="#"><img class="nav-icon" src="img/home.svg" alt="home icon"><span>Home</span></a>
+                        </li>
+                        <li class="no-bord">
+                            <a href="#"><img class="nav-icon" src="img/search.svg" alt="search icon"><span>Cerca</span></a>
+                        </li>
+                        <li class="no-bord" >
+                            <a href="#"><img class="nav-icon" src="img/libreria.svg" alt="user library"><span>La tua libreria</span></a>
+                        </li>
+                    </ul>
+                    <!-- sezione playlist -->
                     <div class="playlist">
                         <h4>Playlist</h4>
+                        <!-- bottone quadrato + link testuale -->
                         <div class="square relative">
-                            <a href="#"><span class="add">+</span>
-                            <h6>Crea Playlist</h6></a>
+                            <ul>
+                                <li><a href="#"><span class="add">+</span></a></li>
+                                <li><a href="#"><h6>Crea Playlist</h6></a></li>
+                            </ul>
                         </div>
                         <div class="playlist-name">
                             <ul>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+
                             </ul>
                         </div>
                     </div>
                 </div>
-            <div class="install-app">
+                <!-- sezione bottom sidebar con bottone per installare app e user profile -->
+                <div class="install-app">
                     <div class="install">
                         <a href="#"><i class="far fa-arrow-alt-circle-down install"></i>
                     <p>Installa app</p></a>
@@ -55,22 +67,26 @@
                 </div>
             </div>
         </section>
+        <!-- sezione area principale -->
         <section id="main-area">
+            <!-- sezione top-bar call-to-action -->
             <div class="call-to-action">
                 <a class="btn-upgrade" href="#">effettua l'upgrade</a>
             </div>
+            <!-- sezione contenuto principale -->
             <div class="main-content">
+                <!-- navigazione area contenuto principale -->
                 <nav class="top-nav">
                     <ul>
-                        <a href="#" class="active"><li>In evidenza</li></a>
+                        <a href="#" class="active relative"><li>In evidenza</li></a>
                         <a href="#"><li>Podcast</li></a>
                         <a href="#"><li>Classifiche</li></a>
                         <a href="#"><li>Generi e mood</li></a>
                         <a href="#"><li>Nuove uscite</li></a>
                         <a href="#"><li>Scopri</li></a>
-                        
                     </ul>
                 </nav>
+                <!-- sezione recently played -->
                 <div>
                     <h1 class="recently-title">Recently played</h1>
                 </div>
@@ -78,60 +94,86 @@
                     <div class="recently-cover relative">
                         <div class="description">
                             <a href="#">
-                                <div class="opacity"></div>
+                            <div class="opacity"></div>
                             <img src="img/metal_lifting.jpg" alt="metal compilation">
-                            
                             </a>
                             <p class="title">Heavy metal<p>
-                                <p class="subtitle">Subtitle</p>
-                            
-                            
+                            <p class="subtitle">Subtitle</p>
                             <div class="play-video">
                                 <i class="far fa-play-circle"></i>
                             </div>
                         </div>
-                        
                     </div>
-                    <div class="recently-cover">
-                        <img src="img/stranger.jpeg" alt="stranger things">
+                    <div class="recently-cover relative">
                         <div class="description">
+                            <a href="#">
+                                <div class="opacity"></div>
+                                <img src="img/stranger.jpeg" alt="stranger things">
+                                </a>
                             <p class="title">Stranger Things, Vol.
                                 1 (a Netflix Original
                                 Series Soundtrack)<p>
                             <p class="subtitle">Kyle Dixon & Micahel Stein</p>
+                            <div class="play-video">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="recently-cover">
-                        <img src="img/aquietplace.jpeg" alt="a quiet place">
+                    <div class="recently-cover relative">
                         <div class="description">
+                            <a href="#">
+                                <div class="opacity"></div>
+                                <img src="img/aquietplace.jpeg" alt="a quiet place">
+                                </a>
                             <p class="title">A quiet place<p>
                             <p class="subtitle">Subtitle</p>
+                            <div class="play-video">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="recently-cover">
-                        <img src="img/split.jpeg" alt="split">
+                    <div class="recently-cover relative">
                         <div class="description">
+                            <a href="#">
+                                <div class="opacity"></div>
+                                <img src="img/split.jpeg" alt="split">
+                                </a>
                             <p class="title">Split</p>
                             <p class="subtitle">Subtitle</p>
+                            <div class="play-video">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="recently-cover">
-                        <img src="img/cure.jpeg" alt="cure">
+                    <div class="recently-cover relative">
                         <div class="description">
-                            <p class="title">A cure for wellness<p>
+                            <a href="#">
+                                <div class="opacity"></div>
+                                <img src="img/cure.jpeg" alt="a cure for wellness">
+                                </a>
+                            <p class="title">A cure for wellness</p>
                             <p class="subtitle">Subtitle</p>
+                            <div class="play-video">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="recently-cover">
-                        <img src="img/sinister.jpeg" alt="sinister">
+                    <div class="recently-cover relative">
                         <div class="description">
-                            <p class="title">Sinister<p>
+                            <a href="#">
+                                <div class="opacity"></div>
+                                <img src="img/sinister.jpeg" alt="sinister">
+                                </a>
+                            <p class="title">Sinister</p>
                             <p class="subtitle">Subtitle</p>
+                            <div class="play-video">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <h1 class="recently-title">Creato per Joe Doe</h1>
+                    <h1 class="recently-title">Creato per John Doe</h1>
                     <p class="subtitle-pop">Più ascolti, più accurati saranno i suggerimenti.</p>
                 </div>
                 <div class="recently-played">
@@ -139,14 +181,13 @@
                         <img src="img/radar.jpeg" alt="radar playlist">
                         <div class="description">
                             <p class="title">Radar<p>
-                            
                         </div>
                     </div>
                     <div class="recently-cover">
                         <img src="img/mixdaily.jpeg" alt="daily playlist">
                         <div class="description">
                             <p class="title">Daily Mix 1<p>
-                            </div>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -157,21 +198,23 @@
                     <div class="recently-cover">
                         <img src="img/youg.jpeg" class="cover-circle" alt="young and beautiful">
                         <div class="description">
-                            <p>Title<p>
-                            <p>Subtitle</p>
-                        </div>
+                            <p class="title">Young and Beautiful<p>
+                            <p class="subtitle">Subtitle</p>
                     </div>
+                </div>
                     <div class="recently-cover">
                         <img src="img/einaudi.jpeg" class="cover-circle" alt="ludovico einaudi">
                         <div class="description">
-                            <p>Title<p>
-                            <p>Subtitle</p>
+                            <p class="title">Ludovico Einaudi<p>
+                            <p class="subtitle">Subtitle</p>
                         </div>
                     </div>
         </section>
     </main>
+    <!-- sezione footer -->
     <footer>
         <div class="playing">
+            <!-- mini-cover e descrizione album sezione dx del footer -->
             <div>
                 <img class="album-small" src="img/sinister.jpeg" alt="sinister album">
             </div>
@@ -184,6 +227,7 @@
                 <i class="far fa-folder"></i>
             </div>
         </div>
+        <!-- pulsantier audio player sezione center del footer  -->
         <div class="player-control">
             <div class="player">
                 <i class="fas fa-random"></i>
@@ -195,21 +239,20 @@
             <div class="timing">
                 <div class="timer">0:25</div>
                 <div class="player-trackbar-center">
-                </div> 
+                    <div class="trackbar-over relative"><span class="circle"><i class="fas fa-circle"></i></span></div>
+                </div>
                 <div class="timer">4:35</div>
             </div>
         </div>
+        <!-- sound control sezione destra del footer -->
         <div class="right-control">
             <div class="control">
                 <i class="fas fa-list"></i>
                 <i class="fas fa-desktop"></i>
                 <i class="fas fa-volume-up"></i>
-            <div class="volume-trackbar">
-                
-            </div>    
-            </div>
-            <div>
-                
+                <div class="volume-trackbar">
+                    <div class="volume-over relative"><span class="circle"><i class="fas fa-circle"></i></span></div>
+                </div>
             </div>
         </div>
     </footer>
