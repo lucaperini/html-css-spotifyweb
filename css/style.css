@@ -124,8 +124,7 @@ footer{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    display:flex;
-    font-size:1.8rem;
+    font-size:1rem;
     color:black;
 }
 
@@ -162,14 +161,15 @@ footer{
     margin-right:5px;
     vertical-align: middle;
     display: inline-block;
+    
 }
 
 .install-app p, i{
     font-size:0.8rem;
     display:inline-block;
     margin-left:5px;
-    padding:1px;
     color:gray;
+    
 }
 
 .install-app .doe{
